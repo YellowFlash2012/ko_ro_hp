@@ -1,0 +1,161 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Open sans', sans-serif;
+}
+
+.welcome-wrapper {
+    background-image: url(assets/viewport.jpg);
+    height: 100vh;
+    margin: 0;
+}
+
+/* navbar styling */
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0px;
+    align-items: center;
+}
+
+.logo img {
+    height: 100px;
+    width: 100px;
+    
+}
+
+.nav-links ul li {
+    display: inline;
+    margin: 10px;
+    list-style-type: none;
+    
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 20px;
+
+    padding-bottom: 10px;
+    background: 
+      linear-gradient(currentColor 0 0) 
+      0 100% /var(--d, 0) 3px 
+    no-repeat;
+    transition:0.5s;
+}
+
+.nav-links ul li a:hover {
+    --d: 100%;
+    
+}
+
+.btn {
+    color: #666;
+    font-size: 20px;
+    border: 1px solid #333;
+    padding: 5px;
+    cursor: pointer;
+
+    background:
+    linear-gradient(#ff0000 0 0) 
+    left /var(--d, 0%) 100% no-repeat;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    --d: 100%;
+    color: #fff;
+}
+
+/* welcome landing page */
+h1 {
+    text-align: center;
+    font-size: 70px;
+}
+
+/* Section products */
+.product-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-wrapper img {
+    width: 478px;
+    height: 269px;
+}
+
+.robotics {
+    display: flex;
+    margin-top: 5em;
+
+    max-height: 269px;
+}
+
+.robotics .info,
+.solutions .info {
+    margin-right: 4em;
+    
+}
+
+.self-driving img {
+    margin-right: 8em;
+    
+}
+
+.info h3,
+.info p {
+    margin-bottom: 2.5em;
+}
+
+.info h3 {
+    border-bottom: 5px solid #ffc73d;
+    
+    padding-bottom: 3em;
+}
+
+.self-driving {
+    display: flex;
+    margin: 2em 0;
+    max-height: 269px;
+    width: 1088.97px;
+    
+}
+
+.self-driving .info {
+    width: 478px;
+}
+
+.solutions {
+    display: flex;
+    
+    max-height: 269px;
+}
+
+/* lead style */
+.lead {
+    background-color: #ffc73d;
+    text-align: center;
+    margin: 5em 0;
+}
+
+.lead p {
+    margin: 5em 0;
+}
+
+.lead .btn {
+    margin-bottom: 2.5em;
+}
+
+
+/* media queries */
+
+@media screen and (max-width:800px) {
+    
+}
